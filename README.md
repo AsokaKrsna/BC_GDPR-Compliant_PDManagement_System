@@ -226,62 +226,6 @@ DS/DC/DP all grant consent → DP can process data
 
 ---
 
-## 🔬 Research Methodology
-
-### Phase 1: Understand & Document (Week 1)
-- [ ] Run existing system
-- [ ] Trace through consent workflows
-- [ ] Document current behavior
-- [ ] Identify attack surfaces
-
-### Phase 2: Assumption Testing (Weeks 2-3)
-- [ ] Implement malicious actors
-- [ ] Test key compromise scenarios
-- [ ] Test node collusion
-- [ ] Document findings
-
-### Phase 3: Security Analysis (Weeks 4-6)
-- [ ] Implement attack scenarios
-- [ ] Test vulnerabilities
-- [ ] Measure impact
-- [ ] Propose mitigations
-
-### Phase 4: Write Report (Weeks 7-8)
-- [ ] Document all findings
-- [ ] Create diagrams
-- [ ] Compare with paper's claims
-- [ ] Present contributions
-
----
-
-## 📊 Expected Deliverables
-
-### 1. Working System ✅
-- Enhanced version of toful's implementation
-- Attack simulation modules
-- Security testing framework
-
-### 2. Research Paper 📄
-- Introduction & Related Work
-- System Architecture
-- **Assumption Testing Results** (Your Contribution)
-- **Security Vulnerability Analysis** (Your Contribution)
-- **Mitigation Strategies** (Your Contribution)
-- Conclusion & Future Work
-
-### 3. Presentation 🎤
-- Demo of working system
-- Live attack demonstrations
-- Results visualization
-- Q&A preparation
-
-### 4. Code Repository 💻
-- Clean, documented code
-- Reproducible experiments
-- Test suite
-- Setup instructions
-
----
 
 ## 🛠️ Tools & Technologies
 
@@ -340,33 +284,12 @@ DS/DC/DP all grant consent → DP can process data
 
 ---
 
-## 📝 Next Steps
-
-### Immediate (Today)
-1. ✅ Clean workspace
-2. ✅ Understand project structure
-3. ⏳ Setup development environment
-4. ⏳ Run the existing system
-
-### This Week
-- [ ] Document system architecture
-- [ ] Create attack scenario templates
-- [ ] Design experiment methodology
-- [ ] Start coding attack simulations
-
-### Next Week
-- [ ] Begin assumption testing
-- [ ] Collect baseline metrics
-- [ ] Implement first attack scenario
-
----
-
 ## 👥 Team & Contact
 
-**Student:** Durjoy  
+**Student:** Durjoy  Majumdar & Vatsala Gupta
 **Course:** Advanced Blockchain Technology  
-**Advisor:** [Your Advisor]  
-**Institution:** [Your University]
+**Advisor:** Dr. Somnath Tripathy
+**Institution:** IIT Patna
 
 ---
 
@@ -375,11 +298,3 @@ DS/DC/DP all grant consent → DP can process data
 This research project builds upon:
 - Original paper: IEEE © 2020
 - Base code: Open source (see LICENSE in BC_GDPR-Compliant_PDManagement_System/)
-
-Research contributions and enhancements: [Your License]
-
----
-
-**Last Updated:** November 16, 2025  
-**Status:** 🟢 Ready to Start Development
-
