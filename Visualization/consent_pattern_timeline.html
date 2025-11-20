@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consent Pattern Timeline - Metadata Privacy Vulnerability</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .critical {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        svg {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .timeline-item {
+            transition: all 0.3s;
+        }
+        .timeline-item:hover {
+            opacity: 0.8;
+        }
+        .inference-box {
+            background: #ffe6e6;
+            border: 2px dashed #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #34495e;
+            color: white;
+        }
+        .data-table tr:hover {
+            background: #f5f5f5;
+        }
+        .vulnerable {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Metadata Privacy Vulnerability: Consent Pattern Timeline Analysis</h1>
+        
+        <div class="warning">
+            <strong>⚠️ Test Source:</strong> Phase 2, Suite 2.6, Test 2.6.2 - Pattern Analysis from Transaction History<br>
+            <strong>Vulnerability ID:</strong> AV-20 (HIGH Severity) + AV-21 (CRITICAL Severity)<br>
+            <strong>GDPR Articles Violated:</strong> Article 5(1)(a) (Fairness), Article 17 (Right to Erasure)
+        </div>
+
+        <h2>📊 Blockchain Transaction Timeline</h2>
+        
+        <svg width="1300" height="600" style="margin: 20px 0;">
+            <!-- Title -->
+            <text x="650" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">
+                Alice's Consent Pattern Reveals Sensitive Health Information
+            </text>
+            <text x="650" y="55" text-anchor="middle" font-size="14" fill="#666">
+                Data Subject: 0x1A74...35C6 | Blockchain: Public Ethereum-compatible
+            </text>
+            
+            <!-- Timeline axis -->
+            <line x1="100" y1="150" x2="1200" y2="150" stroke="#34495e" stroke-width="3"/>
+            
+            <!-- Block markers -->
+            <circle cx="200" cy="150" r="8" fill="#3498db"/>
+            <circle cx="500" cy="150" r="8" fill="#3498db"/>
+            <circle cx="800" cy="150" r="8" fill="#3498db"/>
+            <circle cx="1100" cy="150" r="8" fill="#e74c3c"/>
+            
+            <!-- Block labels -->
+            <text x="200" y="180" text-anchor="middle" font-weight="bold">Block 48</text>
+            <text x="500" y="180" text-anchor="middle" font-weight="bold">Block 49</text>
+            <text x="800" y="180" text-anchor="middle" font-weight="bold">Block 50</text>
+            <text x="1100" y="180" text-anchor="middle" font-weight="bold" fill="#e74c3c">Block 54</text>
+            
+            <!-- Timestamps -->
+            <text x="200" y="195" text-anchor="middle" font-size="11" fill="#666">2025-11-19</text>
+            <text x="500" y="195" text-anchor="middle" font-size="11" fill="#666">2025-11-19</text>
+            <text x="800" y="195" text-anchor="middle" font-size="11" fill="#666">2025-11-19</text>
+            <text x="1100" y="195" text-anchor="middle" font-size="11" fill="#666">2025-11-19</text>
+            <text x="200" y="207" text-anchor="middle" font-size="11" fill="#666">18:26:14</text>
+            <text x="500" y="207" text-anchor="middle" font-size="11" fill="#666">18:26:14</text>
+            <text x="800" y="207" text-anchor="middle" font-size="11" fill="#666">18:26:14</text>
+            <text x="1100" y="207" text-anchor="middle" font-size="11" fill="#e74c3c">18:26:15</text>
+            
+            <!-- Consent 1: General Practitioner -->
+            <rect x="120" y="230" width="160" height="100" fill="#3498db" opacity="0.9" rx="5" class="timeline-item"/>
+            <text x="200" y="255" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Consent 1</text>
+            <text x="200" y="275" text-anchor="middle" font-size="12" fill="white">Recipient:</text>
+            <text x="200" y="290" text-anchor="middle" font-size="11" font-weight="bold" fill="white">General Practitioner</text>
+            <text x="200" y="305" text-anchor="middle" font-size="10" fill="#ecf0f1">Gas: 3,124,786</text>
+            <text x="200" y="320" text-anchor="middle" font-size="9" fill="#ecf0f1">Contract: 0x053c...5370</text>
+            
+            <!-- Consent 2: Oncologist (CRITICAL) -->
+            <rect x="420" y="230" width="160" height="100" fill="#e67e22" opacity="0.9" rx="5" class="timeline-item"/>
+            <text x="500" y="255" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Consent 2</text>
+            <text x="500" y="275" text-anchor="middle" font-size="12" fill="white">Recipient:</text>
+            <text x="500" y="290" text-anchor="middle" font-size="11" font-weight="bold" fill="white">🏥 Oncologist</text>
+            <text x="500" y="305" text-anchor="middle" font-size="10" fill="#ecf0f1">Gas: 3,124,810</text>
+            <text x="500" y="320" text-anchor="middle" font-size="9" fill="#ecf0f1">Contract: 0x09a8...0e29</text>
+            
+            <!-- Consent 3: Life Insurance -->
+            <rect x="720" y="230" width="160" height="100" fill="#c0392b" opacity="0.9" rx="5" class="timeline-item"/>
+            <text x="800" y="255" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Consent 3</text>
+            <text x="800" y="275" text-anchor="middle" font-size="12" fill="white">Recipient:</text>
+            <text x="800" y="290" text-anchor="middle" font-size="11" font-weight="bold" fill="white">💰 Life Insurance</text>
+            <text x="800" y="305" text-anchor="middle" font-size="10" fill="#ecf0f1">Gas: 3,147,359</text>
+            <text x="800" y="320" text-anchor="middle" font-size="9" fill="#ecf0f1">Contract: 0x8DEd...d2A6</text>
+            
+            <!-- Revocation (Still on blockchain!) -->
+            <rect x="1020" y="230" width="160" height="100" fill="#e74c3c" opacity="0.9" rx="5" class="timeline-item"/>
+            <text x="1100" y="255" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Revocation ❌</text>
+            <text x="1100" y="275" text-anchor="middle" font-size="11" fill="white">Alice revokes ALL</text>
+            <text x="1100" y="290" text-anchor="middle" font-size="11" fill="white">consents</text>
+            <text x="1100" y="305" text-anchor="middle" font-size="10" fill="#ecf0f1">Gas: 30,968</text>
+            <text x="1100" y="320" text-anchor="middle" font-size="9" font-weight="bold" fill="yellow">⚠️ History persists!</text>
+            
+            <!-- Inference arrows -->
+            <defs>
+                <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#e74c3c" />
+                </marker>
+            </defs>
+            
+            <!-- Inference connections -->
+            <path d="M 280 280 Q 390 400 500 280" stroke="#e74c3c" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowred)"/>
+            <path d="M 580 280 Q 690 400 800 280" stroke="#e74c3c" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowred)"/>
+            
+            <!-- Inference box -->
+            <rect x="300" y="420" width="600" height="140" fill="#fff5f5" stroke="#e74c3c" stroke-width="3" rx="10"/>
+            <text x="600" y="445" text-anchor="middle" font-size="16" font-weight="bold" fill="#e74c3c">
+                🚨 PRIVACY VIOLATION: Automated Inference
+            </text>
+            <text x="600" y="470" text-anchor="middle" font-size="13" fill="#333">
+                GP → Oncologist → Life Insurance = LIKELY CANCER DIAGNOSIS
+            </text>
+            <text x="600" y="495" text-anchor="middle" font-size="12" fill="#666">
+                Temporal Pattern: Medical specialist following GP, then immediate insurance application
+            </text>
+            <text x="600" y="515" text-anchor="middle" font-size="11" fill="#666">
+                Risk: Discrimination, stigmatization, unauthorized profiling
+            </text>
+            <text x="600" y="535" text-anchor="middle" font-size="11" font-weight="bold" fill="#e74c3c">
+                ❌ Revocation does NOT erase this metadata from blockchain ❌
+            </text>
+        </svg>
+
+        <h2>🔍 Metadata Exposed on Public Blockchain</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Consent</th>
+                    <th>Block #</th>
+                    <th>Timestamp</th>
+                    <th>Recipient (Data Controller)</th>
+                    <th>Contract Address</th>
+                    <th>Privacy Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Consent 1</strong></td>
+                    <td>48</td>
+                    <td>2025-11-19 18:26:14 UTC</td>
+                    <td>General Practitioner (GP)</td>
+                    <td><code>0x053c...5370</code></td>
+                    <td>Reveals health data collection</td>
+                </tr>
+                <tr style="background: #fff3cd;">
+                    <td><strong>Consent 2</strong></td>
+                    <td>49</td>
+                    <td>2025-11-19 18:26:14 UTC</td>
+                    <td><span class="vulnerable">🏥 Oncologist</span></td>
+                    <td><code>0x09a8...0e29</code></td>
+                    <td class="vulnerable">⚠️ Implies cancer-related condition</td>
+                </tr>
+                <tr style="background: #f8d7da;">
+                    <td><strong>Consent 3</strong></td>
+                    <td>50</td>
+                    <td>2025-11-19 18:26:14 UTC</td>
+                    <td><span class="vulnerable">💰 Life Insurance Company</span></td>
+                    <td><code>0x8DEd...d2A6</code></td>
+                    <td class="vulnerable">🚨 Post-diagnosis insurance = discrimination risk</td>
+                </tr>
+                <tr style="background: #f8d7da;">
+                    <td><strong>Revocation</strong></td>
+                    <td>54</td>
+                    <td>2025-11-19 18:26:15 UTC</td>
+                    <td>All consents revoked</td>
+                    <td>Multiple transactions</td>
+                    <td class="vulnerable">❌ Metadata still visible forever!</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="critical">
+            <h3>🚨 VULNERABILITY ANALYSIS: AV-20 + AV-21</h3>
+            <p><strong>Issue Identified:</strong></p>
+            <ul>
+                <li><strong>AV-20 (Pattern Disclosure - HIGH):</strong> Transaction history reveals behavioral patterns without accessing actual data</li>
+                <li><strong>AV-21 (Immutability - CRITICAL):</strong> Revocation ≠ Erasure. All metadata persists on blockchain forever</li>
+            </ul>
+            
+            <p><strong>What an Attacker Can Infer:</strong></p>
+            <ul>
+                <li>✅ Alice visited a General Practitioner (Block 48)</li>
+                <li>✅ Alice was referred to an Oncologist immediately after (Block 49) → <strong>Likely cancer diagnosis</strong></li>
+                <li>✅ Alice applied for life insurance shortly after diagnosis (Block 50) → <strong>Potential fraud concern or discrimination risk</strong></li>
+                <li>✅ Temporal correlation: All within seconds → <strong>Urgent medical situation</strong></li>
+                <li>❌ Alice later revoked all consents (Block 54) → <strong>Metadata STILL VISIBLE on chain</strong></li>
+            </ul>
+            
+            <p><strong>GDPR Violations:</strong></p>
+            <ul>
+                <li><strong>Article 4(1):</strong> Blockchain addresses are personal data identifiers</li>
+                <li><strong>Article 5(1)(a):</strong> Processing is not "fair" if it enables unauthorized profiling</li>
+                <li><strong>Article 9:</strong> Special category health data exposed through metadata</li>
+                <li><strong>Article 17:</strong> Right to erasure IMPOSSIBLE - blockchain is immutable</li>
+            </ul>
+            
+            <p><strong>Real-World Impact:</strong></p>
+            <ul>
+                <li>Insurance companies could deny coverage or increase premiums</li>
+                <li>Employers could discriminate in hiring decisions</li>
+                <li>Marketers could target vulnerable individuals</li>
+                <li>Adversarial parties could blackmail or stigmatize</li>
+            </ul>
+            
+            <p><strong>Architectural Conclusion:</strong></p>
+            <p style="font-weight: bold; color: #dc3545; font-size: 16px;">
+                ❌ UNFIXABLE - This is a fundamental incompatibility between blockchain transparency and GDPR privacy requirements. 
+                The paper's "cryptographic erasure" solution (deleting encryption keys) does NOT solve the metadata visibility problem.
+            </p>
+        </div>
+
+        <h2>📋 Test Evidence</h2>
+        <div class="inference-box">
+            <p><strong>Source:</strong> <code>truffle-output.txt</code>, Lines 2550-2595</p>
+            <p><strong>Test Suite:</strong> Phase 2, Suite 2.6, Test 2.6.2</p>
+            <p><strong>Test Name:</strong> "Should demonstrate pattern analysis reveals sensitive information"</p>
+            <p><strong>Test Result:</strong> ✅ PASSED (491ms) - Vulnerability successfully demonstrated</p>
+            <p><strong>Vulnerability Catalog Entry:</strong> AV-20 (Pattern Disclosure), AV-21 (Immutability prevents erasure)</p>
+        </div>
+
+        <h2>💡 Key Takeaway</h2>
+        <div class="warning">
+            <p style="font-size: 16px; margin: 0;">
+                <strong>Even without accessing the actual medical records,</strong> an observer can infer Alice likely has cancer 
+                just by watching consent transaction patterns on the blockchain. <strong>This metadata is PERSONAL DATA under GDPR Article 4(1)</strong>, 
+                and the blockchain's immutability makes it <strong>impossible to comply with GDPR Article 17 (Right to Erasure)</strong>.
+            </p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 30px; color: #666; font-size: 12px;">
+            Generated from empirical test data | Report: Critical Analysis of Blockchain-Based GDPR Compliance
+        </p>
+    </div>
+</body>
+</html>
